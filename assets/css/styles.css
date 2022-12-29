@@ -1,30 +1,55 @@
+:root{
+    --lavender: #b5a8d3;
+    --electricgrape: #6a50a7;
+    --darkvoid: #100120;
+    --snowgrey: #dedede;
+    --aquamarine: #abd8d5;
+    --sunshine: #fefc97;
+    --electricpink: #ad1b97;
+    --midnightgrape: #2f074d;
+}
+
 html{
     font-size: 62.5%;
     margin-top: 0;
     padding: 0;
 }
 
+li{
+    display:inline-block;
+}
+
 body {
+    background-image: linear-gradient(var(--darkvoid),var(--midnightgrape),var(--darkvoid));
     line-height: 1.5;
     margin-top: 0;
     padding-top: 0;
-     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 header {
-    padding: 0px;
+    border-bottom: 3px solid var(--electricpink);
+    padding: 30px;
     margin: 0 auto;
-    background-color: peachpuff;
+    background-image: linear-gradient(var(--midnightgrape),var(--darkvoid));
     width: 100%;
     
 }
 footer{
-    margin: 0;
-    background-color: peachpuff;   
+    margin: 0px;
+    padding: 20px;
+    background-image: linear-gradient(var(--darkvoid),var(--midnightgrape));  
     width: 100%;
+    border-top: 3px solid var(--electricpink);
+
 }
 
-h1 {margin-top: 0;
+nav{
+    display: inline-block;
+}
+
+h1 {
+    margin-top: 0;
 }
 
 .footer-bottom-margin {
@@ -49,7 +74,8 @@ h1 {margin-top: 0;
 .projectcontainer-page-width{
     
    justify-content: center;
-    min-width: 80%;
+    max-width: 80%;
+    min-width: auto;
     flex-wrap: wrap;
     flex-grow: 1;
 }
@@ -67,15 +93,15 @@ h1 {margin-top: 0;
 }
 .minorproject-width{
     max-width: 80%;
-    min-width: 40%;
+    min-width: auto;
     align-items: center;
     margin: 5%;
     flex-grow: 1;
 }
 .img-resize {
-    min-width: 100%;
+    min-width: auto;
     max-width: 100%;
-    max-height: 100%;
+    max-height: auto;
 
 
 }
@@ -84,6 +110,38 @@ h1 {margin-top: 0;
     max-width: 100%;
     flex-grow: 1;
     flex-wrap: wrap;
+}
+
+
+.minor-project{
+    
+    border: 3px solid var(--aquamarine);
+    min-width: 150px;
+    max-width: 400px;
+    background-color: var(--lavender);
+    border-radius: 18%;
+    padding:3%;
+}
+
+.major-project{
+    padding: 5%;
+    min-width: 300px;
+    max-width: 80%;
+    border: 3px solid var(--aquamarine);
+    background-color: var(--lavender);
+    border-radius: 22%;
+
+}
+
+.about-me{
+    width: auto;
+    height:45%;
+    border-radius: 30%;
+    border: 3px solid var(--aquamarine);
+    background-color: var(--lavender);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
 }
 
 
