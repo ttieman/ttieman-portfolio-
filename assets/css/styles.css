@@ -29,6 +29,7 @@ body {
 
 header {
     border-bottom: 3px solid var(--electricpink);
+    box-shadow: 0px 0px 41px 1px rgba(173,27,151,0.67);
     padding: 30px;
     margin: 0 auto;
     background-image: linear-gradient(var(--midnightgrape),var(--darkvoid));
@@ -41,6 +42,7 @@ footer{
     background-image: linear-gradient(var(--darkvoid),var(--midnightgrape));  
     width: 100%;
     border-top: 3px solid var(--electricpink);
+    box-shadow: 0px 0px 41px 1px rgba(173,27,151,0.67);
 
 }
 
@@ -119,6 +121,7 @@ h1 {
 
 .minor-project{
     
+    box-shadow: 0px 0px 53px 4px rgba(10,189,141,0.67);
     border: 3px solid var(--aquamarine);
     min-width: 150px;
     max-width: 400px;
@@ -128,14 +131,19 @@ h1 {
 }
 
 .major-project{
+    
+    box-shadow: 0px 0px 53px 4px rgba(10,189,141,0.67);
     padding: 5%;
     min-width: 300px;
     max-width: 80%;
     border: 3px solid var(--aquamarine);
-    background-color: var(--lavender);
+    background-image: url(../images/placeimg_600_200_tech.jpg);
     border-radius: 22%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
 
-}
+
 
 .about-me{
     width: auto;
@@ -145,6 +153,7 @@ h1 {
     background-color: var(--lavender);
     margin-top: 30px;
     margin-bottom: 30px;
+    box-shadow: 0px 0px 41px 1px rgba(10,189,141,0.67);
     
 }
 
@@ -154,6 +163,8 @@ h1 {
     margin-left: 5px;
     margin-right: 5px;
     padding: 3px;
+    background-color: var(--lavender);
+    box-shadow: 0px 0px 53px 4px rgba(10,189,141,0.67);
     
 }
 
@@ -168,3 +179,227 @@ h1 {
     min-width: 200px;
     
 }
+
+.footer-heading{
+    border: 2px solid var(--aquamarine);
+    border-radius: 15%;
+    max-width: 150px;
+    text-align: center;
+    background-color: var(--lavender);
+    box-shadow: 0px 0px 53px 4px rgba(10,189,141,0.67);
+
+}
+
+.footer-info{
+    border: 2px solid var(--aquamarine);
+    border-radius: 15%;
+    background-color: var(--lavender);
+    box-shadow: 0px 0px 53px 4px rgba(10,189,141,0.67);
+}
+
+.background1 {
+    background-image: url(../images/placeimg_200_150_tech.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background2 {
+    background-image: url(../images/placeimg_200_150_tech\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.background3 {
+    background-image: url(../images/placeimg_200_150_tech\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background4 {
+    background-image: url(../images/placeimg_200_150_tech\ \(3\).jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
+  background-color:black;
+}
+                        /* this is the start of the flicker styles*/
+.logo-container {
+  text-align:center;
+ display: flex;
+ justify-content:center ;
+ align-items: center;
+ flex-direction: column;
+  border:5px solid #abd8d5;
+  max-width:600px;
+  min-width: 1vw;
+  top:150px;
+  border-radius:20px;
+  left:50%;
+  margin: auto;
+  animation: border-flicker 2s linear infinite;
+  margin-bottom: 40px;
+  
+  height: fit-content;
+  width: fit-content;
+  
+}
+
+ .logo-flicker{
+  color:#FF00E6;
+  font-family: 'Raleway', sans-serif;
+  font-size:64px;
+  font-size: 4vw;
+  letter-spacing:10px;
+  animation: text-flicker 3s linear infinite;
+  block-size: fit-content;
+  width: fit-content;
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#offset {
+  animation: letter-flicker 2s linear infinite;
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  
+  2% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  8% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  9% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  12% {
+    opacity:0.1;
+    text-shadow: 0px 0px rgba(242, 22, 22, 1);
+  }
+  20% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  25% {
+    opacity:0.3;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  30% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  
+  70% {
+    opacity:0.7;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  
+  72% {
+    opacity:0.2;
+    text-shadow:0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  
+  77% {
+    opacity:.9;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  100% {
+    opacity:.9;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+}
+
+@keyframes border-flicker {
+  0% {
+    opacity:0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  2% {
+    opacity:1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  4% {
+    opacity:0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  
+  8% {
+    opacity:1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  70% {
+    opacity:0.7;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  100% {
+    opacity:1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+}
+
+@keyframes letter-flicker {
+  0% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  2% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  4% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  
+  
+  19% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  21% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  23% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  
+  80% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  83% {
+    opacity:0.4;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  87% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+}
+                            /*this is the  end of the flicker styles*/
