@@ -9,10 +9,24 @@
     --midnightgrape: #2f074d;
 }
 
+#about-me{}
+
+#projects{}
+
+#contact-info{}
+
+
+
 html{
     font-size: 62.5%;
     margin-top: 0;
     padding: 0;
+}
+
+main{
+  height: 100%;
+  width: 100%;
+
 }
 
 li{
@@ -20,7 +34,12 @@ li{
 }
 
 body {
-    background-image: linear-gradient(var(--darkvoid),var(--midnightgrape),var(--darkvoid));
+  margin-right: 0;
+  width: 100%;
+  height: 100%;
+    background-image:url(../images/mountian-grid.jpg);
+    background-position: center;
+    background-size: cover;  
     line-height: 1.5;
     margin-top: 0;
     padding-top: 0;
@@ -76,6 +95,7 @@ h1 {
 .apply-flex {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .apply-flex-row{
@@ -100,9 +120,9 @@ h1 {
 .majorproject-width{
 
    justify-content: center;
-    width: 95%;
-   margin: auto;
-    flex-shrink: 1;
+    width: 100%;
+   margin: 5%;
+    
 }
 
 .img-resize {
@@ -124,9 +144,8 @@ h1 {
     
     box-shadow: 0px 0px 53px 4px rgba(10,189,141,0.67);
     border: 3px solid var(--aquamarine);
-    min-width: 125px;
-    max-width: 400px;
-    min-height:150px;
+    width: 40%;
+    min-height: 100px;
     max-height: 200px;
     background-color: var(--electricgrape); 
     border-radius: 18%;
@@ -136,23 +155,25 @@ h1 {
     margin: 5%;
     flex-grow: 1;
     
+    
+    
 }
 
 .major-project{
     padding: 3%;
     box-shadow:inset 0 0 0 1000px rgba(0,0,0,.7), 0px 0px 53px 4px rgba(10,189,141,0.67);
     transition: all 1s linear;
-    margin-left: 0;
-    margin-right: 0;
-    height: 300px;
-    min-width: 60%;
-    max-width: 80%;
+    min-height: 150px;
+    max-height: 300px;
+    min-width: 80%;
+    max-width: 800px;
     border: 3px solid var(--aquamarine);
-    background-image: url(../images/placeimg_600_200_tech.jpg);
+    background-image: url(../images/pre-work-study-guide_screenshot.png);
     background-position: center;
     border-radius: 22%;
     background-repeat: no-repeat;
     background-size: cover;
+    
     }
 
 
@@ -203,10 +224,14 @@ h1 {
     box-shadow: 0px 0px 53px 4px rgba(10,189,141,0.67);
     display: flex;
     
-    align-items:center;
-    
-    
-    
+    align-items:center;   
+}
+
+.project-link{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  bottom:15%;
 }
 
 .footer-list{
@@ -236,7 +261,7 @@ h1 {
 }
 
 .background1 {
-    background-image: url(../images/placeimg_200_150_tech.jpg);
+    background-image: url(../images/horiseon-web-marketing.png);
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -269,6 +294,18 @@ h1 {
      box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7),  0px 0px 53px 4px rgba(10,189,141,0.67);
      transition: all 1s linear;
  }
+
+ @media (device-width > 730px) {
+
+  .minor-project{
+    width: 400px;
+
+  }
+}
+  @media (device-width < 425px) {
+
+    
+}
 
 
 
@@ -412,6 +449,7 @@ box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
   }
 }
 
+
 @keyframes letter-flicker {
   0% {
     opacity:0.1;
@@ -452,5 +490,11 @@ box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
     opacity:1;
     text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
   }
+
+  
+
+
+ 
+
 }
                             /*this is the  end of the flicker styles*/
