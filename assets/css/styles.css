@@ -1,76 +1,84 @@
-:root{
-    --lavender: #b5a8d3;
+:root{                  /*These are variables that assign the colors used throughout the webpage*/
     --electricgrape: #6a50a7;
     --darkvoid: #100120;
-    --snowgrey: #dedede;
     --aquamarine: #abd8d5;
     --sunshine: #fefc97;
     --electricpink: #ad1b97;
     --midnightgrape: #2f074d;
 }
 
-#about-me{}
+#about-me{}     /*These next three id's are used to identify and link to specific parts of the page when the nav links at the top are clicked*/
 
 #projects{}
 
 #contact-info{}
 
 a{
-  display: flex;
+  display: flex;         /*anchor width and formating using flex*/
   flex-direction: column;
   justify-content: center;
   width: 100%;
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 62.5%;         /*font margin-top and padding reset */
     margin-top: 0;
     padding: 0;
 }
 
-main{
-  height: 100%;
+main{                   /*set main to entire size of the page*/
+  height: 100%; 
   width: 100%;
 
 }
 
-li{
+li{                                 /*list items become inline block elements*/
     display:inline-block;
 }
 
-p{
+p{                                              /*indent paragraphs and add padding*/
   text-indent: 7%;
   padding:2%;
   
 
 }
-body {
+
+body{               /*applying fonts, setting background images, and adjusting line height for the entire page*/
   margin-right: 0;
   width: 100%;
   height: 100%;
-    background-image:url(../images/mountian-grid.jpg);
-    background-position: center;
-    background-size: cover;  
-    line-height: 1.5;
-    margin-right: 0;
-    margin-top: 0;
-    padding-top: 0;
-     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+  background-image:url(../images/mountian-grid.jpg);
+  background-position: center;
+  background-size: cover;  
+  line-height: 1.5;
+  margin-right: 0;
+  margin-top: 0;
+  padding-top: 0;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
 }
 
-header {
-    border-bottom: 3px solid var(--electricpink);
-    box-shadow: 0px 0px 41px 1px rgba(173,27,151,0.67);
-    padding: 30px;
-    margin: 0 auto;
-    background-image: linear-gradient(var(--midnightgrape),var(--darkvoid));
-    width: 100%;
-    
+header{
+  border-bottom: 3px solid var(--electricpink);                 /*header background and padding*/
+  box-shadow: 0px 0px 41px 1px rgba(173,27,151,0.67);
+  padding: 30px;
+  margin: 0 auto;
+  background-image: linear-gradient(var(--midnightgrape),var(--darkvoid));
+  width: 100%;
+  
 }
-footer{
+
+nav{          /*set flex formating for the nav section of the page*/
+    
+   display:flex;
+   justify-content: center;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+footer{                                     /*footer background apply flex formating and padding, and borders */
     margin: 0px;
-    padding: 20px;
+    padding: 20px;          
     background-image: linear-gradient(var(--darkvoid),var(--midnightgrape));  
     width: 100%;
     border-top: 3px solid var(--electricpink);
@@ -84,142 +92,74 @@ footer{
 
 }
 
-nav{
-    
-   display:flex;
-   justify-content: center;
-   margin-left: auto;
-   margin-right: auto;
-}
 
-h1 {
+h1{                             /*removes margin top from h1 element*/
     margin-top: 0;
 }
 
 h2{
-  text-align: center;
+  text-align: center;     /*align text and remove margin from h2 elements*/
   margin:0;
-
 }
 
-.footer-margin {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    width: 100%;
-    margin-top: 2%;
-    padding-left: 2%;
-    padding-right: 2%;
-
-    
+.apply-flex {           /*applys flex and wrap and sets width too 100%*/
+  display: flex;    
+  flex-wrap: wrap;
+  width: 100%;
 }
-
-.recent-work-heading{
-  text-align: center;
-  display:flex;
+.apply-flex-column{               /*apply flex column and center it*/
   flex-direction: column;
-  margin-top: 5% ;
-  background-image: radial-gradient(var(--electricgrape),var(--midnightgrape));
-  border: 2px solid var(--aquamarine);
-  box-shadow: 0px 0px 53px 4px rgba(10,189,141,0.67);
-  width: 25%;
+  align-items: center;
+}
+
+.logo{                      /*applys flex to the logo at the top and applies a boarder, and sets width to scale with page*/
+  display:flex;     
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid var(--aquamarine);
+  margin-bottom: 20px;
+  max-width: fit-content;
+  min-width: fit-content;
+}
+
+.nav-link{      /*makes the links in the nav section inline-block adds border and adjsut their box model*/
+  display: inline-block;
+  border:2px solid var(--aquamarine);
+  margin-left: 4px;
+  margin-right: 4px;
+  padding-left: 1%;
+  padding-right: 1%;
+  background-image:radial-gradient(var(--electricgrape),var(--midnightgrape));
+  box-shadow: 0px 0px 53px 4px rgba(10,189,141,0.67);
   border-radius: 15%;
-  height: 34%;
-  font-size: 2rem;
-  padding: 1%;
+  text-align: center;
+  color: #100120;
+  text-decoration: none;        /*removes text decoration from header nav section*/
+  font-size: 2.3vw;
+  min-width: 100px;
+  max-width: 24%;
 }
 
-.apply-flex {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+a:visited{                      /*visited links color change*/
+  color: var(--sunshine);
+}
+a:link{                         /*links color change*/
+  color: var(--sunshine);
 }
 
-.apply-flex-row{
-    flex-direction: row;
-    justify-content: center;   
+
+
+
+.flex-wrapper{                /*applies flex grow and wrap to element*/
+  justify-content: center;
+  max-width: 100%;
+  flex-grow: 1;
+  flex-wrap: wrap;
 }
 
-.apply-flex-column{
-    flex-direction: column;
-    align-items: center;
-}
 
-.projectcontainer-page-width{
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    min-width: 100%;
-    
-    
-    flex-direction: column;
-    align-items: center
-}
-
-.minorproject-heading{
-  background-image: radial-gradient(var(--electricgrape),var(--midnightgrape));
-  border-radius:0 15% 15% 0;
-  height: auto;
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  padding: 4px;
-  border: 1px solid var(--aquamarine);
-  box-shadow: 0px 0px 7px 4px rgba(10,189,141,0.67);
-
-   
-}
-
-.majorproject-width{
-   justify-content: center;
-    width: 100%;
-   margin: 5%;   
-}
-
-.img-resize {
-    min-width: 100%;
-    max-width: 100%;
-    max-height: 100%;
-
-
-}
-.flex-wrapper{
-    justify-content: center;
-    max-width: 100%;
-    flex-grow: 1;
-    flex-wrap: wrap;
-}
-
-.minor-project-container{
-display: flex;
-flex-direction: row;
-width: 80%;
-flex-wrap: wrap;
-align-items: center;
-justify-content: center;
-
-}
-.minor-project{
-    display: flex;
-    box-shadow: 0px 0px 53px 4px rgba(10,189,141,0.67);
-    border: 3px solid var(--aquamarine);
-    width: 60%;
-    min-height: 200px;
-    max-height: 300px;
-    background-color: var(--electricgrape); 
-    border-radius: 18%;
-    
-    align-items: center;
-    justify-content: center;
-    margin: 5%;
-    flex-grow: 0;
-    flex-direction: column;  
-}
-
-.about-me-heading{
+.about-me-heading{            /*the heading for the about me section its adds flex formating, positioning, and sizing sets backgroung and border*/
   display: relative;
   display: flex;
   flex-direction: row;
@@ -234,76 +174,154 @@ justify-content: center;
   top: 30%;
 }
 
-.major-project{
-    display: flex;
-    flex-direction: start;
-    padding: 0;
-    align-items: center;
-    box-shadow:inset 0 0 0 1000px rgba(0,0,0,.7), 0px 0px 53px 4px rgba(10,189,141,0.67);
-    transition: all 1s linear;
-    min-height: 300px;
-    max-height: 500px;
-    min-width: 80%;
-    max-width: 800px;
-    border: 3px solid var(--aquamarine);
-    background-image: url(../images/pre-work-study-guide_screenshot.png);
-    background-position: center;
-    border-radius: 22%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    }
-
-
-
-.about-me{
-    min-width: 100px;
-    max-width: 800px;
-    min-height: 100px;
-    border-radius: 30%;
-    border: 3px solid var(--aquamarine);
-    background-image: radial-gradient(circle, var( --electricgrape) , var(--midnightgrape));
-    margin-top: 30px;
-    margin-bottom: 30px;
-    box-shadow: 0px 0px 41px 1px rgba(10,189,141,0.67);
-    font-size: 2vmin;
-    
-    
+.about-me{                    /*sets size of the about me section, scaling fontsize, margins, border, and background*/
+  min-width: 100px;
+  max-width: 800px;
+  min-height: 100px;
+  border-radius: 30%;
+  border: 3px solid var(--aquamarine);
+  background-image: radial-gradient(circle, var( --electricgrape) , var(--midnightgrape));
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 41px 1px rgba(10,189,141,0.67);
+  font-size: 2vmin;
 }
 
-.nav-link{
-    display: inline-block;
-    border:2px solid var(--aquamarine);
-    margin-left: 4px;
-    margin-right: 4px;
-    padding-left: 1%;
-    padding-right: 1%;
-    background-image:radial-gradient(var(--electricgrape),var(--midnightgrape));
-    box-shadow: 0px 0px 53px 4px rgba(10,189,141,0.67);
-    border-radius: 15%;
-    text-align: center;
-    color: #100120;
-    text-decoration: none;
-    font-size: 2.3vw;
-    min-width: 100px;
-    max-width: 24%;
-
-    
-    
+.recent-work-heading{
+  text-align: center;             /*flex display border and sizing for heading in recent work section*/
+  display:flex;
+  flex-direction: column;
+  margin-top: 5% ;
+  background-image: radial-gradient(var(--electricgrape),var(--midnightgrape));
+  border: 2px solid var(--aquamarine);
+  box-shadow: 0px 0px 53px 4px rgba(10,189,141,0.67);
+  width: 25%;
+  justify-content: center;
+  border-radius: 15%;
+  height: 34%;
+  font-size: 2rem;
+  padding: 1%;
 }
 
-.logo{
-    display:flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid var(--aquamarine);
-    margin-bottom: 20px;
-    max-width: fit-content;
-    min-width: fit-content;
-    }
+.projectcontainer-page-width{       /*recent work section container that aligns everthing to the center of the entire page width*/
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  min-width: 100%;
+  flex-direction: column;
+  align-items: center
+}
 
-.footer-heading{
+.major-project{                       /*major project setting for background, size, formating, border, and transitions*/
+  display: flex;
+  flex-direction: start;
+  padding: 0;
+  align-items: center;
+  box-shadow:inset 0 0 0 1000px rgba(0,0,0,.7), 0px 0px 53px 4px rgba(10,189,141,0.67);
+  transition: all 1s linear;
+  min-height: 300px;
+  max-height: 500px;
+  min-width: 80%;
+  max-width: 800px;
+  border: 3px solid var(--aquamarine);
+  background-image: url(../images/pre-work-study-guide_screenshot.png);
+  background-position: center;
+  border-radius: 22%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.minor-project-container{         /*minor project container and formating*/
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; 
+}
+
+.minorproject-heading{
+  background-image: radial-gradient(var(--electricgrape),var(--midnightgrape));     /*heading for the minor project that handles border ,formating, and sizing*/
+  border-radius:0 15% 15% 0;
+  height: auto;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  border: 1px solid var(--aquamarine);
+  box-shadow: 0px 0px 7px 4px rgba(10,189,141,0.67);
+}
+
+.minor-project{                                     /*these are the minor project cards this handles sizing, flex formating, and borders*/
+  display: flex;        
+  box-shadow: 0px 0px 53px 4px rgba(10,189,141,0.67);
+  border: 3px solid var(--aquamarine);
+  width: 60%;
+  min-height: 200px;
+  max-height: 300px;
+  background-color: var(--electricgrape); 
+  border-radius: 18%;
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+  flex-grow: 0;
+  flex-direction: column;  
+}
+.project-link{
+  width: 100%;              /*this handles the clickable link area for the project cards */
+  height: 100%;
+  bottom:15%;
+  text-decoration: none;
+  color: black; 
+  display: flex;
+
+}
+   
+.background1 , .background2 , .background3 , .background4 {         /*handles the sizing and box shadow of project background images*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7) , 0px 0px 53px 4px rgba(10,189,141,0.67);
+  transition: all 1s linear;
+}
+
+.background1{                                                                           /*the next 4 classes are used to set the background images of the project cards to different images*/                   
+  background-image: url(../images/horiseon-web-marketing.png);
+}
+
+
+.background2 {
+  background-image: url(../images/placeimg_200_150_tech\ \(1\).jpg);
+}
+
+.background3 {
+  background-image: url(../images/placeimg_200_150_tech\ \(2\).jpg);
+}
+
+.background4 {
+  background-image: url(../images/placeimg_200_150_tech\ \(3\).jpg); 
+}
+
+
+.background1:hover , .background2:hover                                                   /*this is overlay boxshadow that fades out when hovered over on the project cards*/  
+, .background3:hover, .background4:hover , .major-project:hover
+{
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.0) ,  0px 0px 53px 4px rgba(10,189,141,0.67);
+   
+}
+
+.footer-margin{                     /*footer formating, and size*/  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  margin-top: 2%;
+  padding-left: 2%;
+  padding-right: 2%;  
+}
+
+.footer-heading{        /*footer heading styles for border, background, sizing and formating*/  
     border: 2px solid var(--aquamarine);
     border-radius: 15%;
     width: fit-content;
@@ -314,29 +332,18 @@ justify-content: center;
     align-items:center;  
     background-image: radial-gradient(var(--electricgrape),var(--midnightgrape)); 
     font-size: 1.3vw;
-}
+    padding: 2px;
+  }
 
-.project-link{
-  width: 100%;
-  height: 100%;
-  bottom:15%;
-  text-decoration: none;
-  color: black; 
-  display: flex;
-  
-}
-
-
-.footer-list{
-    
+  .footer-list{            /*footer information sizing and formating*/  
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
     width: 80%;
-    padding: 0; 
+    padding: 2px; 
 }
 
-.footer-info{
+.footer-info{                                       /*footer infor border, size, formating, and background*/  
     border: 2px solid var(--aquamarine);
     border-radius: 15%;
     background-color: var(--lavender);
@@ -352,56 +359,10 @@ justify-content: center;
     text-align: center;
     text-decoration: underline;
 }
-a:visited{
-  color: var(--sunshine);
-}
-a:link{
-  color: var(--sunshine);
-}
 
-.background1:hover , .background2:hover
-, .background3:hover, .background4:hover , .major-project:hover
-{
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.0) ,  0px 0px 53px 4px rgba(10,189,141,0.67);
-   
-}
+/*media query section*/  
 
-.background1 {
-    background-image: url(../images/horiseon-web-marketing.png);
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7) , 0px 0px 53px 4px rgba(10,189,141,0.67);
-    transition: all 1s linear;
-}
-
-  
-.background2 {
-    background-image: url(../images/placeimg_200_150_tech\ \(1\).jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7) ,  0px 0px 53px 4px rgba(10,189,141,0.67);
-    transition: all 1s linear;
-
-    }
-
-.background3 {
-    background-image: url(../images/placeimg_200_150_tech\ \(2\).jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7),  0px 0px 53px 4px rgba(10,189,141,0.67);
-    transition: all 1s linear;
-}
-
-.background4 {
-    background-image: url(../images/placeimg_200_150_tech\ \(3\).jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7),  0px 0px 53px 4px rgba(10,189,141,0.67);
-     transition: all 1s linear;
- }
-
- @media screen and (device-width > 730px) {
+ @media screen and (device-width > 730px) {       /*adjusts width of and fontsize of nav-link, and minor projects when the device with is about 730px*/  
 
   .nav-link{
     font-size: 1.8vh;
@@ -411,7 +372,7 @@ a:link{
 
   }
 }
-  @media screen and (device-width < 700px) {
+  @media screen and (device-width < 700px) {      /*adjusts the list-info, and footer-list classes when the device width is under 700px*/  
     .list-info{
       display: block;
       height: 20%;
@@ -428,10 +389,11 @@ a:link{
     
 }
 
+/*this next section was used with a lot of help from another sight 
+these are style setting for the flickering logo on the page the additional help site will be cited in the readme*/  
 
-
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-body {
+@import url('https://fonts.googleapis.com/css?family=Raleway');         /*imports specific font for use in logo*/        
+body {  
   background-color:black;
 }
                         /* this is the start of the flicker styles*/
@@ -442,7 +404,7 @@ body {
  align-items: center;
  flex-direction: column;
   border:5px solid #abd8d5;
-  max-width:fit-content;
+  max-width:fit-content;                /*this is the logo container styling for size, formating, animation, position, background, and border*/  
   min-width: 1vw;
   top:150px;
   border-radius:20px;
@@ -458,7 +420,7 @@ body {
 
  .logo-flicker{
   color:#FF00E6;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;             /*calls the imported font or sets it to default, animation control, fontsize ,formating,color, and margins*/  
   font-size:64px;
   font-size: 4vw;
   letter-spacing:10px;
@@ -472,10 +434,11 @@ body {
 }
 
 #offset {
-  animation: letter-flicker 2s linear infinite;
+  animation: letter-flicker 2s linear infinite;       /*this is the animation offset to make some letter flicker at other times and not all at once*/  
 }
 
-@keyframes text-flicker {
+@keyframes text-flicker {               /*this is the start of the animation key frames that fade the opacity of the text in and out */ 
+
   0% {
     opacity:0.1;
     text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
@@ -529,8 +492,9 @@ body {
     text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
   }
 }
+      /*this is the end of the flicker key frames for the text*/  
 
-@keyframes border-flicker {
+@keyframes border-flicker {         /*this is the begining of the border flicker keyframes and flickers the border in and out in a similar way to the text inside the border*/  
   0% {
     opacity:0.1;
     -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
@@ -570,8 +534,9 @@ box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
   }
 }
 
+/*this is the end of the border flicker styles*/  
 
-@keyframes letter-flicker {
+@keyframes letter-flicker {       /*this is the flickering for the offset letters in the neon sign logo*/  
   0% {
     opacity:0.1;
     text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
@@ -618,4 +583,4 @@ box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
  
 
 }
-                            /*this is the  end of the flicker styles*/
+                            /*this is the  end of the flicker styles in the selected offset letters*/
